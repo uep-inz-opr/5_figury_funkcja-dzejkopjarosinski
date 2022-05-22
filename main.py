@@ -24,9 +24,9 @@ def Rozwiazanie():
             pole = s*(s-figura[0])*(s-figura[1])*(s-figura[2])
             pole = pole ** 0.5
             wynik.append(pole)
-        else:
+        elif len(figura) > 3:
             print("Błąd, można podać maksymalnie 3 liczby")
-    wynik_suma = sum(wynik)
+    wynik_suma = round(sum(wynik),2)
     print(wynik_suma)
     x += 1
         
